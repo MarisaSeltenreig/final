@@ -60,6 +60,30 @@ h2 {
     float: right;
   }
 }
+.card {
+  font-family: $font-family;
+  font-size: $font-s;
+  display: inline-block;
+  background-color: $card-bg-color;
+  border-radius: 10%;
+  border: 30px;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+.card {
+  .card-img-top {
+    max-height: 600px; 
+    object-fit: cover; 
+}
+}
+
 
 @media only screen and (max-width: 576px) {
   .navbar {
@@ -78,6 +102,7 @@ h2 {
   h1 {
     @include font(30px, 600);
     margin-top: 60px;
+    padding-top: 40px;
   }
 
   h2 {
@@ -98,4 +123,3 @@ h2 {
     }
   }
 }
-  

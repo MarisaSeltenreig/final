@@ -38,24 +38,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .form-floating {
-    
-    left: 10%;
-    flex-direction: column;
-  }
-}
-.embed-responsive {
-  display: flex;
-  margin: 100px;
-  width: 30%;
-  height: 500px;
-  gap: 35px;
-}
-
-@media screen and (max-width: 576px) {
-  .embed-responsive {
-    width: 50%;
-    margin: 0 auto;
-    gap: 20px;
+    left: 20%;
     flex-direction: column;
   }
 }
@@ -77,7 +60,7 @@ body {
   }
 }
 
-.accordion-button {
+.accordion-button{
   background-color: $secondary-color;
   color: $accordion-button-color;
   font-size: $font-s;
@@ -86,6 +69,7 @@ body {
   border: 1px solid rgb(141, 139, 233);
   border-radius: 10px;
   min-height: 100px;
+  outline: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -101,7 +85,7 @@ body {
   font-size: $font-s;
   min-height: 75px;
   padding: 10px;
-  border: 1px solid #b0c1fa;
+  border: 1px solid #7f8cb8;
   border-radius: 10px;
 }
 
@@ -118,19 +102,3 @@ body {
   background-position: center;
 }
 
-.card {
-  font-family: $font-family;
-  font-size: $font-s;
-  display: inline-block;
-  background-color: $card-bg-color;
-  border-radius: 20%;
-  border: 5px;
-}
-
-@media screen and (max-width: 576px) {
-  .card {
-    width: 90%;
-    margin: 20px auto;
-    display: block;
-  }
-}

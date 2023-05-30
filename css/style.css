@@ -142,6 +142,28 @@ h2 {
   float: right;
 }
 
+.card {
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  display: inline-block;
+  background-color: rgb(202, 177, 212);
+  border-radius: 10%;
+  border: 30px;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+.card .card-img-top {
+  max-height: 600px;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 576px) {
   .navbar {
     padding: 10px;
@@ -158,6 +180,7 @@ h2 {
     font-weight: 600;
     font-family: "Space Mono", monospace;
     margin-top: 60px;
+    padding-top: 40px;
   }
   h2 {
     font-size: 30px;
@@ -213,23 +236,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .form-floating {
-    left: 10%;
-    flex-direction: column;
-  }
-}
-.embed-responsive {
-  display: flex;
-  margin: 100px;
-  width: 30%;
-  height: 500px;
-  gap: 35px;
-}
-
-@media screen and (max-width: 576px) {
-  .embed-responsive {
-    width: 50%;
-    margin: 0 auto;
-    gap: 20px;
+    left: 20%;
     flex-direction: column;
   }
 }
@@ -258,6 +265,7 @@ body {
   border: 1px solid rgb(141, 139, 233);
   border-radius: 10px;
   min-height: 100px;
+  outline: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -272,7 +280,7 @@ body {
   font-size: 25px;
   min-height: 75px;
   padding: 10px;
-  border: 1px solid #b0c1fa;
+  border: 1px solid #7f8cb8;
   border-radius: 10px;
 }
 
@@ -284,25 +292,8 @@ body {
 }
 .offcanvas-end {
   background-color: rgba(173, 153, 192, 0.9);
-  color: rgb(218, 129, 240);
+  color: rgb(190, 134, 204);
   background-position: center;
-}
-
-.card {
-  font-family: "Space Mono", monospace;
-  font-size: 25px;
-  display: inline-block;
-  background-color: rgb(225, 174, 245);
-  border-radius: 20%;
-  border: 5px;
-}
-
-@media screen and (max-width: 576px) {
-  .card {
-    width: 90%;
-    margin: 20px auto;
-    display: block;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
